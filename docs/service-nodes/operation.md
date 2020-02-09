@@ -85,7 +85,7 @@ If you have just updated the *xrouter.conf* on your SNode Computer wallet, follo
 If you have just updated your XCloud services or plugin files, follow these instructions:
 
 1. Add the service name to the `plugins=` entry in `xrouter.conf`. The service name listed must be the exact name of your config file without the file extension. Separate each service name with a comma.
-    * Example: If you had 3 services that you wanted to deply with config names `eth_getBalance.conf`, `eth_blockNumber.conf`, and `weatherData.conf`, the `plugins=` setting would read as follows: `plugins=eth_getBalance,eth_blockNumber,weatherData`
+    * Example: If you had 3 services that you wanted to deploy with config names `eth_getBalance.conf`, `eth_blockNumber.conf`, and `weatherData.conf`, the `plugins=` setting would read as follows: `plugins=eth_getBalance,eth_blockNumber,weatherData`
 1. Use `xrReloadConfigs` to load your newly configured settings to `xrouter.conf` without needing to restart your Service Node.
 1. Use `servicenodesendping` to propogate these new settings to the network immediately or wait up to 3 minutes for this to happen automatically.
 1. You can view your configs using `xrStatus` ([See example output](https://api.blocknet.co/#service-node)).
